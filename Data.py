@@ -21,7 +21,7 @@ class SpeechDataset(Dataset):
         # fpaths, texts = get_data(hp.data, r)  # thchs30
         # fpaths, texts = get_keda_data(hp.data, r)  # keda api
         # fpaths, texts = get_thchs30_data(hp.data, r)
-        fpaths, texts = get_blizzard_data(hp.data, r)
+        fpaths, texts = get_LJ_data(hp.data, r)
         print('Finish loading data')
         self.fpaths = fpaths
         self.texts = texts

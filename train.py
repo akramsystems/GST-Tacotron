@@ -43,7 +43,7 @@ def train(log_dir, dataset_size, start_epoch=0):
     f.write(msg + '\n')
 
     # load model
-    model = Tacotron().cuda()#.to(device)
+    model = Tacotron().to(device)
     if torch.cuda.device_count() > 1:
         model = DataParallel(model)
     if start_epoch != 0:
